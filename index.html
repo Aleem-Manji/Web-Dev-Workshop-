@@ -9,8 +9,14 @@
 <body>
   <header class="hero">
     <h1>IEEE WIE Web Dev Workshop</h1>
-    <p>Starter template with HTML, CSS, and JavaScript.</p>
-    <button id="welcomeButton" type="button">Click Me</button>
+    <p>Starter template focused on HTML and CSS.</p>
+    <button
+      id="welcomeButton"
+      type="button"
+      onclick="document.getElementById('message').textContent = 'Welcome to the workshop! Start editing this project.'"
+    >
+      Click Me
+    </button>
   </header>
 
   <main class="content">
@@ -19,16 +25,15 @@
       <ul>
         <li>Editing HTML structure</li>
         <li>Styling with CSS</li>
-        <li>Adding behavior with JavaScript</li>
+        <li>Adding behavior with simple inline JavaScript when needed</li>
       </ul>
     </section>
 
     <section>
       <h2>Live message</h2>
-      <p id="message">Press the button to see JavaScript in action.</p>
+      <p id="message">Press the button to see a simple inline action.</p>
     </section>
   </main>
 
-  <script src="script.js"></script>
 </body>
 </html>
